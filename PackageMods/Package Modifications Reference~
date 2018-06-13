@@ -1,0 +1,66 @@
+------------------------Husky----------------------- 
+
+Husky_control -   
+
+launch
+control.launch -> control_modified.launch
+~/MPC_ROS/ros_ws/src/husky/husky_control/launch/control_modified.launch
+
+Husky_description - 
+
+launch
+description.launch -> description_modified.launch
+~/MPC_ROS/ros_ws/src/husky/husky_description/launch/description_modified.launch
+
+
+meshes
+VLP16_base_1.dae
+VLP16_base_1.stl
+VLP16_base_2.dae
+VLP16_base_2.stl
+VLP16_mount.dae
+VLP16_mount.stl
+VLP16_scan.dae
+VLP16_scan.stl
+~/MPC_ROS/ros_ws/src/husky/husky_description/meshes/accessories/VLP16_base_1.dae
+
+urdf
+description_modified.xacro
+~/MPC_ROS/ros_ws/src/husky/husky_description/urdf/description_modified.xacro
+huskywithvelo.urdf.xacro
+~/MPC_ROS/ros_ws/src/husky/husky_description/urdf/huskywithvelo.urdf.xacro
+VLP-16.urdf.xacro
+~/MPC_ROS/ros_ws/src/husky/husky_description/urdf/accessories/VLP-16.urdf.xacro
+
+
+
+------------------------husky_simulator-------------------
+husky_gazebo - package for simulation in gazebo
+
+launch
+huskywithvelo_empty_world.launch
+~/MPC_ROS/ros_ws/src/husky_simulator/husky_gazebo/launch/huskywithvelo_empty_world.launch
+spawn_huskywithvelo.launch
+~/MPC_ROS/ros_ws/src/husky_simulator/husky_gazebo/launch/spawn_huskywithvelo.launch
+
+urdf
+description_modified.gazebo.xacro
+~/MPC_ROS/ros_ws/src/husky_simulator/husky_gazebo/urdf/description_modified.gazebo.xacro 
+huskywithsick.gazebo.xacro
+~/MPC_ROS/ros_ws/src/husky_simulator/husky_gazebo/urdf/huskywithsick.gazebo.xacro
+huskywithvelo.gazebo.xacro
+~/MPC_ROS/ros_ws/src/husky_simulator/husky_gazebo/urdf/huskywithvelo.gazebo.xacro
+
+
+/accessories
+sick_lms100.gazebo.xacro
+~/MPC_ROS/ros_ws/src/husky_simulator/husky_gazebo/urdf/accessories/sick_lms100.gazebo.xacro
+VLP-16.gazebo.xacro
+~/MPC_ROS/ros_ws/src/husky_simulator/husky_gazebo/urdf/accessories/VLP-16.gazebo.xacro
+
+
+
+
+
+
+
